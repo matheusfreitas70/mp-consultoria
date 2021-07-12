@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançamento Imobiliário</title>
+    <link rel="stylesheet" type="text/css" href="/styles/estilos.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <!-- ==SEÇÃO CABEÇALHO== -->
+    <header>
+        <div class="open">
+            <div class="layer"></div>
+            <div class="layer"></div>
+        </div>
+
+    <!-- MAIN NAVBAR -->
+        <nav class="header">
+            <h2 class="logo">Imobiliária</h2>
+            <i class="fa fa-bars x2" onclick="menuToggle()"></i>
+            <ul id='navigation'>
+                <li>
+                    <a href="#" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#">Saiba Mais</a>
+                </li>
+                <li>
+                    <a href="#">Imagens</a>
+                </li>
+                <li>
+                    <a href="#">Contatos</a>
+                </li>
+                <i class="fa fa-times x2" onclick="menuToggle()"></i>
+            </ul>
+        </nav>
+
+        <!-- DOBRA HOME -->
+        <div class="abertura">
+          <div class="bannerText">
+              <h1>Lançamento Imobiliário</h1>
+                <h2>Um Empreendimento Sem Igual!</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tortor erat, mattis quis euismod eu, gravida at lectus. Vivamus fermentum nisi lectus, eget condimentum neque tincidunt et. Donec blandit nisl ut ligula euismod, vitae mattis sapien rutrum. Proin eu feugiat leo. Morbi semper urna et enim euismod suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur consectetur sed lectus in auctor. Vestibulum id sollicitudin erat. Donec quis tortor dolor.</p>
+                    <a href="#">Leia Mais</a>
+          </div>
+            <img class="image" src="/images/icon-city.png" title="Empreendimento" alt="Empreendimento">
+
+            <!-- Redes Sociais -->
+            <ul class="sci">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+
+            <!-- Quadrados em rotação -->
+            <div class="element1"></div>
+            <div class="element2"></div>
+        </div>
+    </header>
+
+<!-- ===SEÇÃO FORMS CAPTURA DE LEADS=== -->
+    <section>
+        <div class="container">
+            <h2>Saiba mais sobre o Lançamento Imobiliário</h2>
+            <p>Preencha o formulário abaixo com seus dados e iremos te enviar uma notificação assim que o empreendimento for lançado.</p>
+        
+
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span class="text">Nome</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span class="text">Sobrenome</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row100">
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span class="text">Celular</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="" required="required">
+                        <span class="text">E-mail</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botão Enviar -->
+            <div class="row100">
+                <div class="col">
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+            <p>&copy Landing Page criada por Matheus Freitas - Julho/2021</p>
+        </div>
+    </footer>
+
+    <!-- JAVA SCRIPT TOGGLE MENU -->
+    <script type="text/javascript">
+        function menuToggle() {
+            var element = document.getElementById("navigation");
+            element.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
